@@ -24,7 +24,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background-color: rgba(0, 0, 0, 0.946);
+    background-color: rgb(0, 0, 0);
     color: white;
     height: 50px;
     position: fixed;
@@ -57,7 +57,6 @@ header .searchbar {
     display: flex;
     /* background-color: red; */
     width: 550px;
-
 }
 
 header .searchbar input {
@@ -113,7 +112,7 @@ header .nav-right {
 }
 
 header .nav-right .fa-solid {
-    font-size: 28px;
+    font-size: 24px;
     color: white;
 }
 
@@ -189,8 +188,6 @@ header .categories .cat-drop-items a div {
 header .categories .cat-drop-items a div:hover {
     background-color: rgb(21, 20, 20);
 }
-
-
 
 
 
@@ -297,7 +294,7 @@ header .categories .cat-drop-items a div:hover {
     padding-top: 70px;
     display: grid;
     grid-template-areas: 'img product product product product ship ship'
-                        'footer footer footer footer footer footer footer'
+        'footer footer footer footer footer footer footer'
     ;
 }
 
@@ -414,7 +411,8 @@ header .categories .cat-drop-items a div:hover {
 
 }
 
-.product-specs-list h3, .desc h3 {
+.product-specs-list h3,
+.desc h3 {
     font-size: 1.8rem;
     color: #1b5e20;
     margin: 20px 0;
@@ -489,7 +487,7 @@ header .categories .cat-drop-items a div:hover {
     position: fixed;
     top: 55px;
     right: 3px;
-    background:whitesmoke;
+    background: whitesmoke;
     padding: 10px;
     width: 280px;
     color: #333;
@@ -497,7 +495,7 @@ header .categories .cat-drop-items a div:hover {
 
 .ship .section {
     border-bottom: 1px solid #b6b3b3;
-    padding: 10px 0;    
+    padding: 10px 0;
 }
 
 .ship .choice-banner {
@@ -532,15 +530,12 @@ header .categories .cat-drop-items a div:hover {
     float: right;
 }
 
-.ship .fa-solid{
+.ship .fa-solid {
     color: #1f7d08;
 }
 
 
 .ship .link-row {
-    /* display: flex; */
-    /* align-items: center; */
-    /* justify-content: space-between; */
     cursor: pointer;
     font-size: 14px;
     margin: 8px 0;
@@ -612,26 +607,6 @@ header .categories .cat-drop-items a div:hover {
     width: 70px;
     height: 23px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -713,6 +688,127 @@ footer .icons .fa-brands {
 /* footer ends */
 
 @media screen and (max-width:768px) {
+
+header .logo h1 {
+    display: inline-block;
+    font-size: 20px;
+    margin: auto 5px;
+}
+
+
+header .searchbar {
+    display: flex;
+    /* background-color: red; */
+    width: 400px;
+
+}
+
+header .searchbar input {
+    height: 30px;
+    width: 100%;
+    border-radius: 30px;
+    border: 1px solid #1f7d08;
+    background-color: rgba(245, 245, 245, 0.594);
+    backdrop-filter: blur(1px);
+    text-align: center;
+    outline: none;
+}
+
+header .searchbar {
+    position: relative;
+}
+
+header .searchbar img {
+    position: absolute;
+    height: 30px;
+    right: 40px;
+    top: 1px;
+}
+
+header .searchbar #search-icon {
+    height: 30px;
+    width: 40px;
+    position: absolute;
+    background-color: black;
+    right: 0px;
+    top: 0px;
+    border-radius: 30px;
+}
+
+header .searchbar .fa-solid {
+    position: inherit;
+    right: 15px;
+    top: 7px;
+    color: green;
+    font-size: 15px;
+}
+
+header .nav-right img{
+    width: 25px;
+}
+
+
+    /*   PRODUCT   SECTION     */
+    .grid {
+        position: relative;
+        padding-top: 70px;
+        display: grid;
+        grid-template-areas: 'img img img '
+            'product product product'
+            'ship ship ship'
+            'footer footer footer'
+        ;
+    }
+
+    .product {
+
+        /* display: flex; */
+        /* background-color: red; */
+        grid-area: product;
+        margin-left: 0px;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .prod-img {
+        grid-area: img;
+        position: static;
+        border: 2px solid #333;
+
+        height: 420px;
+        margin: 10px;
+        text-align: center;
+    }
+
+    .grid img {
+        width: 350px;
+        height: 400px;
+    }
+
+
+    .ship {
+        grid-area: ship;
+        position: static;
+        background: whitesmoke;
+        padding: 10px;
+        width: 280px;
+        color: #333;
+        width: 80%;
+        margin: auto;
+        margin-bottom: 30px;
+
+    }
+
+    .stars {
+        font-size: 13px;
+        color: #2e7d32;
+    }
+
+    .average-rating p {
+        font-size: 10px;
+    }
+
+
 
     /* footer */
     footer {
