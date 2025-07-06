@@ -35,10 +35,11 @@ header {
 header .logo {
 
     font-size: 25px;
-    padding-left: 10px;
+    padding: 0 10px;
     /* background-color: purple; */
     display: flex;
     justify-content: space-between;
+    align-items: center;
     height: 40px;
     width: 250px;
     position: relative;
@@ -48,9 +49,10 @@ header .logo .categories {
     align-content: center;
 }
 
-header .logo h1 {
+header .logo .lg a {
+    color: white;
     display: inline-block;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 header .searchbar {
@@ -306,6 +308,7 @@ header .categories .cat-drop-items a div:hover {
     margin-left: 363px;
     width: 49%;
     padding: 20px;
+
 }
 
 .prod-img {
@@ -314,6 +317,7 @@ header .categories .cat-drop-items a div:hover {
     border: 2px solid #333;
     /* bottom: 180px; */
     height: 420px;
+    margin-left: 10px;
 }
 
 .grid img {
@@ -689,63 +693,66 @@ footer .icons .fa-brands {
 
 @media screen and (max-width:768px) {
 
-header .logo h1 {
-    display: inline-block;
-    font-size: 20px;
-    margin: auto 5px;
-}
+    header .logo .lg a {
+        display: inline-block;
+        font-size: 20px;
+        margin: auto 5px;
+    }
 
+    header .logo {
+        padding: 0;
+    }
 
-header .searchbar {
-    display: flex;
-    /* background-color: red; */
-    width: 400px;
+    header .searchbar {
+        display: flex;
+        /* background-color: red; */
+        width: 400px;
 
-}
+    }
 
-header .searchbar input {
-    height: 30px;
-    width: 100%;
-    border-radius: 30px;
-    border: 1px solid #1f7d08;
-    background-color: rgba(245, 245, 245, 0.594);
-    backdrop-filter: blur(1px);
-    text-align: center;
-    outline: none;
-}
+    header .searchbar input {
+        height: 30px;
+        width: 100%;
+        border-radius: 30px;
+        border: 1px solid #1f7d08;
+        background-color: rgba(245, 245, 245, 0.594);
+        backdrop-filter: blur(1px);
+        text-align: center;
+        outline: none;
+    }
 
-header .searchbar {
-    position: relative;
-}
+    header .searchbar {
+        position: relative;
+    }
 
-header .searchbar img {
-    position: absolute;
-    height: 30px;
-    right: 40px;
-    top: 1px;
-}
+    header .searchbar img {
+        position: absolute;
+        height: 30px;
+        right: 40px;
+        top: 1px;
+    }
 
-header .searchbar #search-icon {
-    height: 30px;
-    width: 40px;
-    position: absolute;
-    background-color: black;
-    right: 0px;
-    top: 0px;
-    border-radius: 30px;
-}
+    header .searchbar #search-icon {
+        height: 30px;
+        width: 40px;
+        position: absolute;
+        background-color: black;
+        right: 0px;
+        top: 0px;
+        border-radius: 30px;
+    }
 
-header .searchbar .fa-solid {
-    position: inherit;
-    right: 15px;
-    top: 7px;
-    color: green;
-    font-size: 15px;
-}
+    header .searchbar .fa-solid {
+        position: inherit;
+        right: 15px;
+        top: 7px;
+        color: green;
+        font-size: 15px;
+    }
 
-header .nav-right img{
-    width: 25px;
-}
+    header .nav-right img {
+        width: 25px;
+    }
 
 
     /*   PRODUCT   SECTION     */
@@ -774,15 +781,22 @@ header .nav-right img{
         grid-area: img;
         position: static;
         border: 2px solid #333;
-
+        width: 94%;
         height: 420px;
         margin: 10px;
         text-align: center;
     }
 
     .grid img {
-        width: 350px;
+        width: 300px;
         height: 400px;
+    }
+
+    .product-specs-list {
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 0 0px;
+
     }
 
 
@@ -800,7 +814,7 @@ header .nav-right img{
     }
 
     .stars {
-        font-size: 13px;
+        font-size: 10px;
         color: #2e7d32;
     }
 
@@ -886,6 +900,7 @@ header .nav-right img{
         padding: 8px;
         background-color: #379b1f;
         border: none;
+        margin-top: 5px;
     }
 
     .footer-bottom p {

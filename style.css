@@ -762,7 +762,7 @@ footer .icons .fa-brands {
         justify-content: space-around;
         align-items: center;
         padding: 10px;
-        background-color: rgba(0, 0, 0, 0.648);
+        background-color: rgba(0, 0, 0, 0.92);
         color: white;
         height: 50px;
         /* position: fixed; */
@@ -772,9 +772,13 @@ footer .icons .fa-brands {
 
     header .logo {
         font-family: "Orbitron", sans-serif;
-        font-size: 15px;
+        font-size: 18px;
         padding-left: 10px;
         order: 0;
+    }
+
+    header .logo a{
+        color: white;
     }
 
     header nav {
