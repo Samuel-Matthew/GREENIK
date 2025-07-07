@@ -5,11 +5,15 @@
 }
 
 body {
-    /* background-color: yellowgreen; */
+    font-family: "Montserrat", sans-serif;
 }
 
 a {
     text-decoration: none;
+}
+
+a:visited{
+    color: inherit;
 }
 
 h1,
@@ -49,8 +53,14 @@ header .logo .categories {
     align-content: center;
 }
 
+header .logo .lg{
+    font-family: "Orbitron", sans-serif;
+    font-size: 25px;
+    padding-left: 10px;
+    color: #237b0d;
+}
+
 header .logo .lg a {
-    color: white;
     display: inline-block;
     font-size: 25px;
 }
@@ -207,7 +217,7 @@ header .categories .cat-drop-items a div:hover {
 .product-gallery h1 {
     font-size: 2.5rem;
     text-align: center;
-    color: #1b5e20;
+    color: #237b0d;
 }
 
 .intro-text {
@@ -276,7 +286,7 @@ header .categories .cat-drop-items a div:hover {
 
 .product-item button {
     padding: 10px;
-    background-color: #379b1f;
+    background-color: #237b0d;
     color: white;
     border: none;
     border-radius: 6px;
@@ -285,7 +295,7 @@ header .categories .cat-drop-items a div:hover {
 }
 
 .product-item button:hover {
-    background-color: #1b5e20;
+    background-color: #379b1f;
 }
 
 
@@ -322,7 +332,7 @@ header .categories .cat-drop-items a div:hover {
 
 .grid img {
     width: 350px;
-    height: 400px;
+    height: 100%;
 }
 
 .product .text {
@@ -344,7 +354,7 @@ header .categories .cat-drop-items a div:hover {
 }
 
 .product .text .fa-solid {
-    color: #2e7d32;
+    color: #237b0d;
 }
 
 .rating-container {
@@ -364,7 +374,7 @@ header .categories .cat-drop-items a div:hover {
 
 .stars {
     font-size: 24px;
-    color: #2e7d32;
+    color: #237b0d;
 }
 
 .stars .empty {
@@ -419,7 +429,7 @@ header .categories .cat-drop-items a div:hover {
 .product-specs-list h3,
 .desc h3 {
     font-size: 1.8rem;
-    color: #1b5e20;
+    color: #237b0d;
     margin: 20px 0;
     /* text-align: center; */
 }
@@ -452,14 +462,14 @@ header .categories .cat-drop-items a div:hover {
 
 .reviews-section h2 {
     font-size: 1.8rem;
-    color: #1b5e20;
+    color: #237b0d;
     text-align: center;
     margin-bottom: 30px;
 }
 
 .review-card {
     background: #f9f9f9;
-    border-left: 5px solid #1b5e20;
+    border-left: 5px solid #237b0d;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 8px;
@@ -504,7 +514,7 @@ header .categories .cat-drop-items a div:hover {
 }
 
 .ship .choice-banner {
-    background: #33931a;
+    background: #237b0d;
     padding: 10px;
     border-radius: 6px;
     display: flex;
@@ -536,7 +546,7 @@ header .categories .cat-drop-items a div:hover {
 }
 
 .ship .fa-solid {
-    color: #1f7d08;
+    color: #237b0d;
 }
 
 
@@ -585,6 +595,11 @@ header .categories .cat-drop-items a div:hover {
     font-weight: bold;
     cursor: pointer;
     margin: 10px 0;
+    transition: background .5s linear;
+}
+
+.ship .btn-buy:hover{
+    background-color: #379b1f;
 }
 
 .ship .btn-cart {
@@ -693,7 +708,6 @@ footer .icons .fa-brands {
 /* footer ends */
 
 @media screen and (max-width:768px) {
-
     header .logo .lg a {
         display: inline-block;
         font-size: 20px;
@@ -755,13 +769,17 @@ footer .icons .fa-brands {
         width: 25px;
     }
 
+    .product-gallery h1{
+        font-size: 30px;
+    }
+
 
     /*   PRODUCT   SECTION     */
     .grid {
         position: relative;
         padding-top: 70px;
         display: grid;
-        grid-template-areas: 'img img img '
+        grid-template-areas: 'img img img'
             'product product product'
             'ship ship ship'
             'footer footer footer'
@@ -769,20 +787,21 @@ footer .icons .fa-brands {
     }
 
     .product {
-
-        /* display: flex; */
-        /* background-color: red; */
         grid-area: product;
         margin-left: 0px;
         width: 100%;
         padding: 20px;
     }
 
+    .rating-container {
+        gap: 20px;
+    }
+
     .prod-img {
         grid-area: img;
         position: static;
         border: 2px solid #333;
-        width: 90%;
+        width: 90vw;
         height: 420px;
         margin: auto;
         text-align: center;
@@ -960,7 +979,7 @@ footer .icons .fa-brands {
 
     }
 
-     .product {
+    .product {
 
         /* display: flex; */
         /* background-color: red; */
@@ -1026,6 +1045,13 @@ footer .icons .fa-brands {
         margin-bottom: 20px;
         border-radius: 8px;
         box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    .footer-column button[type='submit'] {
+        padding: 8px;
+        background-color: #379b1f;
+        border: none;
+        margin-top: 5px;
     }
 
 }
