@@ -12,7 +12,7 @@ a {
     text-decoration: none;
 }
 
-a:visited{
+a:visited {
     color: inherit;
 }
 
@@ -53,7 +53,7 @@ header .logo .categories {
     align-content: center;
 }
 
-header .logo .lg{
+header .logo .lg {
     font-family: "Orbitron", sans-serif;
     font-size: 25px;
     padding-left: 10px;
@@ -75,8 +75,9 @@ header .searchbar input {
     height: 40px;
     width: 100%;
     border-radius: 30px;
-    border: 1px solid #1f7d08;
-    background-color: rgba(245, 245, 245, 0.594);
+    border: 2px solid #1f7d08;
+    /* background-color: rgba(245, 245, 245, 0.594); */
+    background-color: white;
     backdrop-filter: blur(1px);
     text-align: center;
     outline: none;
@@ -94,12 +95,12 @@ header .searchbar img {
 }
 
 header .searchbar #search-icon {
-    height: 35px;
+    height: 34px;
     width: 50px;
     position: absolute;
     background-color: black;
-    right: 2px;
-    top: 2px;
+    right: 3px;
+    top: 3px;
     border-radius: 30px;
 }
 
@@ -144,7 +145,7 @@ header .user .drop-items {
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.332);
+    /* background-color: rgba(0, 0, 0, 0.332); */
     width: 110px;
     height: 94px;
     margin-top: 10px;
@@ -169,11 +170,12 @@ header .categories .cat-drop {
     position: absolute;
     left: -8px;
     display: none;
-    /* background-color: red; */
 }
 
 header .categories:hover .cat-drop {
     display: block;
+     /* position: static; */
+    z-index: 1000;
 }
 
 header .categories .cat-drop-items {
@@ -202,10 +204,7 @@ header .categories .cat-drop-items a div:hover {
 }
 
 
-
-
-
-
+/* -----PRODUCT GALLERY----------- */
 
 .product-gallery {
     padding: 60px 20px;
@@ -231,10 +230,8 @@ header .categories .cat-drop-items a div:hover {
 .product-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-    /* grid-template-rows: 500px 500px; */
     gap: 30px;
 }
-
 
 
 /* Product Card */
@@ -286,16 +283,16 @@ header .categories .cat-drop-items a div:hover {
 
 .product-item button {
     padding: 10px;
-    background-color: #237b0d;
+    background: linear-gradient(to right, rgb(0, 0, 0), #237b0d);
     color: white;
     border: none;
     border-radius: 6px;
     cursor: pointer;
-    transition: background-color 0.3s;
+
 }
 
 .product-item button:hover {
-    background-color: #379b1f;
+    box-shadow: 1px 1px 10px #237b0d;
 }
 
 
@@ -591,14 +588,14 @@ header .categories .cat-drop-items a div:hover {
     border: none;
     color: white;
     width: 100%;
-    padding: 12px;
+    padding: 11px;
     font-weight: bold;
     cursor: pointer;
     margin: 10px 0;
-    transition: background .5s linear;
+    transition: background-color .5s linear;
 }
 
-.ship .btn-buy:hover{
+.ship .btn-buy:hover {
     background-color: #379b1f;
 }
 
@@ -606,7 +603,7 @@ header .categories .cat-drop-items a div:hover {
     border: 1px solid black;
     background: white;
     width: 100%;
-    padding: 12px;
+    padding: 11px;
     font-weight: bold;
     cursor: pointer;
 }
@@ -614,7 +611,7 @@ header .categories .cat-drop-items a div:hover {
 .ship .footer-actions {
     display: flex;
     justify-content: space-between;
-    margin-top: 15px;
+    margin-top: 5px;
 }
 
 .ship .footer-actions div {
@@ -633,7 +630,7 @@ header .categories .cat-drop-items a div:hover {
 
 /* footer */
 footer {
-    padding: 10px;
+    padding: 20px 10px 10px 10px;
     background-color: #08100c;
     color: white;
     width: 100%;
@@ -720,18 +717,12 @@ footer .icons .fa-brands {
 
     header .searchbar {
         display: flex;
-        /* background-color: red; */
         width: 400px;
-
     }
 
     header .searchbar input {
         height: 30px;
         width: 100%;
-        border-radius: 30px;
-        border: 1px solid #1f7d08;
-        background-color: rgba(245, 245, 245, 0.594);
-        backdrop-filter: blur(1px);
         text-align: center;
         outline: none;
     }
@@ -743,24 +734,24 @@ footer .icons .fa-brands {
     header .searchbar img {
         position: absolute;
         height: 30px;
-        right: 40px;
+        right: 38px;
         top: 1px;
     }
 
     header .searchbar #search-icon {
-        height: 30px;
-        width: 40px;
+        height: 24px;
+        width: 38px;
         position: absolute;
         background-color: black;
-        right: 0px;
-        top: 0px;
+        right: 3px;
+        top: 3px;
         border-radius: 30px;
     }
 
     header .searchbar .fa-solid {
         position: inherit;
-        right: 15px;
-        top: 7px;
+        right: 11px;
+        top: 6px;
         color: green;
         font-size: 15px;
     }
@@ -769,7 +760,7 @@ footer .icons .fa-brands {
         width: 25px;
     }
 
-    .product-gallery h1{
+    .product-gallery h1 {
         font-size: 30px;
     }
 
@@ -817,7 +808,6 @@ footer .icons .fa-brands {
         max-width: 600px;
         margin: 40px auto;
         padding: 0 0px;
-
     }
 
 

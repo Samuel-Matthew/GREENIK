@@ -4,16 +4,15 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: "Montserrat", sans-serif;
-
 }
 
 a {
     text-decoration: none;
 }
 
-a:visited{
+a:visited {
     color: inherit;
 }
 
@@ -34,7 +33,7 @@ header {
     height: 50px;
     position: fixed;
     width: 100%;
-    z-index: 3;
+    z-index: 1000;
 }
 
 header .logo {
@@ -42,6 +41,14 @@ header .logo {
     font-size: 25px;
     padding-left: 10px;
     color: #237b0d;
+
+}
+
+header .logo img {
+    width: 100px;
+    /* height: 80px; */
+    /* background-color: green; */
+
 }
 
 header nav {
@@ -231,6 +238,7 @@ header .nav-drop .fa-solid {
     padding-bottom: 10px;
     width: 90%;
     margin: auto;
+
 }
 
 .go-green {
@@ -243,9 +251,9 @@ header .nav-drop .fa-solid {
 .go-green .cards {
     width: 250px;
     height: 200px;
-    background-image: url(images/9068.jpg);
+    background-image: url(images/17926.jpg);
     background-size: cover;
-    background-color: #000000a4;
+    background-color: #237b0d;
     background-blend-mode: multiply;
     /* background-color: #237b0d; */
     text-align: center;
@@ -403,6 +411,8 @@ header .nav-drop .fa-solid {
 #about .our-vision .vis-text {
     background-color: rgba(0, 0, 0, 0.098);
     border-bottom-right-radius: 50px;
+    padding: 20px;
+    align-content: center;
 }
 
 
@@ -431,12 +441,13 @@ header .nav-drop .fa-solid {
 
 #about .mission-goal .mg {
     width: 400px;
-    height: 320px;
-    /* background-color: #379b1f; */
+    height: fit-content;
     background: url(images/17926.jpg);
+    background-color: #237b0d;
+    background-blend-mode: multiply;
     background-size: cover;
     margin: 10px;
-    padding: 15px;
+    padding: 30px;
     color: white;
     text-align: center;
     border-radius: 10px;
@@ -522,7 +533,10 @@ header .nav-drop .fa-solid {
 #contact .help-banner {
     width: 90%;
     height: 70px;
+    background: url(images/17926.jpg) no-repeat;
     background-color: #237b0d;
+    background-size: cover;
+    background-blend-mode: multiply;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -552,10 +566,14 @@ header .nav-drop .fa-solid {
     width: 45%;
     display: flex;
     justify-content: center;
+
 }
 
 #contact .help-box .photo img {
+    background: url(images/17926.jpg) no-repeat;
     background-color: #237b0d;
+    background-size: cover;
+    background-blend-mode: multiply;
     width: 100%;
     height: 100%;
     border-radius: 60px 10px;
@@ -586,9 +604,10 @@ header .nav-drop .fa-solid {
 #contact .icn .fa-solid,
 #contact .icn .fa-regular {
     font-size: 35px;
-    background-color: #2c9312;
+    background: linear-gradient(to right, black, #237b0d);
     padding: 10px;
     border-radius: 50%;
+    color: white;
 }
 
 #contact .icn .iconic {
@@ -608,7 +627,7 @@ header .nav-drop .fa-solid {
 }
 
 #contact .icn .iconic .icon-text {
-    background-color: #379b1f;
+    background: linear-gradient(to right, black, #237b0d);
     width: 200px;
     height: 30px;
     position: absolute;
@@ -621,10 +640,10 @@ header .nav-drop .fa-solid {
 }
 
 #contact .icn .iconic .icon-text1 {
-    background-color: #379b1f;
+    background: linear-gradient(to right, black, #237b0d);
+
     width: 135px;
     height: 30px;
-
     position: absolute;
     z-index: 1;
     display: flex;
@@ -655,18 +674,21 @@ header .nav-drop .fa-solid {
     /* background-color: red; */
 }
 
-#contact .map-audit .map{
+#contact .map-audit .map {
     flex-grow: 1;
     width: 50%;
 }
 
 #contact .map-audit .map iframe {
     height: 100%;
-    
+
 }
 
 #contact .map-audit .audit {
+    background: url(images/17926.jpg) no-repeat;
     background-color: #237b0d;
+    background-size: cover;
+    background-blend-mode: multiply;
     width: 40%;
     flex-grow: 1;
 }
@@ -708,8 +730,8 @@ header .nav-drop .fa-solid {
 
 /* footer */
 footer {
-    padding: 10px;
-   background-color: rgb(0, 0, 0);
+    padding: 20px 10px 10px 10px;
+    background-color: rgb(0, 0, 0);
     color: white;
     width: 100%;
 }
@@ -791,7 +813,7 @@ footer .icons .fa-brands {
 @media screen and (max-width:768px) {
     header {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         padding: 10px;
         background-color: rgba(0, 0, 0, 0.92);
@@ -803,14 +825,12 @@ footer .icons .fa-brands {
     }
 
     header .logo {
-        font-family: "Orbitron", sans-serif;
-        font-size: 18px;
-        padding-left: 10px;
+        padding-left: 0px;
         order: 0;
-        color: #237b0d;
+
     }
 
-    header .logo a:visited{
+    header .logo a:visited {
         color: inherit;
     }
 
@@ -824,7 +844,7 @@ footer .icons .fa-brands {
         font-size: 30px;
         order: 2;
         position: absolute;
-        right: 3px;
+        right: 10px;
         top: 9px;
     }
 
@@ -878,6 +898,7 @@ footer .icons .fa-brands {
         align-items: center;
         width: 150px;
         height: 40px;
+        margin-right: 30px;
     }
 
     header .nav-right .fa-solid {
@@ -995,7 +1016,7 @@ footer .icons .fa-brands {
     .hero-btn button {
         width: 100px;
         margin: 10px 5px;
-        
+
     }
 
 
@@ -1008,7 +1029,7 @@ footer .icons .fa-brands {
         font-size: 20px;
     }
 
-    #why-green p {
+    #why-green>p {
         text-align: center;
         padding-bottom: 10px;
         width: 90%;
@@ -1018,15 +1039,15 @@ footer .icons .fa-brands {
 
     .go-green {
         display: grid;
-        grid-template-columns: repeat(2, 150px);
+        grid-template-columns: repeat(2, 160px);
         justify-content: center;
         gap: 10px;
         text-align: justify;
     }
 
     .go-green .cards {
-        width: 150px;
-        height: 170px;
+        width: 160px;
+        height: 160px;
         background-color: #237b0d;
         text-align: center;
         border-radius: 15px;
@@ -1035,13 +1056,14 @@ footer .icons .fa-brands {
     }
 
     .go-green h3 {
-        font-size: 15px;
+        font-size: 11px;
     }
 
     .go-green p {
-        padding: 0px;
-        font-size: 13px;
+        padding: 3px;
+        font-size: 10px;
         font-weight: 300;
+        text-align: justify;
         /* color: rgb(0, 0, 0); */
     }
 
@@ -1221,9 +1243,7 @@ footer .icons .fa-brands {
         width: 280px;
         flex-grow: 1;
         height: fit-content;
-        background-color: #237b0d;
-        margin: 10px;
-        padding: 15px;
+        /* background-color: #237b0d; */
         text-align: center;
         border-radius: 30px;
         /* justify-content: center; */
@@ -1398,7 +1418,7 @@ footer .icons .fa-brands {
         position: relative;
         z-index: 2;
         left: -1px;
-        
+
     }
 
     #contact .icn .iconic .icon-text {
@@ -1445,11 +1465,11 @@ footer .icons .fa-brands {
         margin: auto;
     }
 
-    #contact .map-audit .map{
-    flex-grow: 1;
-    width: 100%;
-    order: 1;
-}
+    #contact .map-audit .map {
+        flex-grow: 1;
+        width: 100%;
+        order: 1;
+    }
 
     #contact .map-audit .map iframe {
         height: 400px;
@@ -1489,9 +1509,14 @@ footer .icons .fa-brands {
         margin: 10px;
         padding: 5px;
         border-radius: 5px;
-        border: none;
+        transition: all .5s linear;
+
+    }
+
+    #contact .map-audit .audit .text button:hover {
+        background-color: #237b0d;
         color: white;
-        background-color: #1d7607;
+        box-shadow: 1px 1px 10px #000000;
     }
 
 
@@ -1560,7 +1585,7 @@ footer .icons .fa-brands {
 
     footer .icons .fa-brands {
         font-size: 20px;
-        padding: 10px 10px 0 0;
+        padding: 10px 0px 0 0;
         transition: font-size 1s ease;
     }
 
