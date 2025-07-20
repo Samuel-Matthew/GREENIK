@@ -134,7 +134,7 @@ header .user #drop {
     right: 0;
     top: 40px;
     display: none;
-    /* background-color: rgba(0, 0, 0, 0.332); */
+    background-color: rgba(0, 0, 0, 0.49);
 }
 
 header .user:hover #drop {
