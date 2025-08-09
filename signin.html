@@ -6,10 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <div class="form-container">
+    <!-- <div class="form-container">
         <form action="">
             <div class="box">
                 <input type="text" name="fName" id="" required><br>
@@ -37,7 +40,58 @@
                 <input type="submit" value="Create Account">
             </div>
         </form>
+    </div> -->
+
+    <div class="signup-container">
+        <div class="form-header">
+            <h1><span class="g-letter">G</span>REENIK</h1>
+            <p>Power your world with green innovation</p>
+        </div>
+
+        <form>
+            <input type="text" placeholder="Full Name" required />
+            <input type="email" placeholder="Email Address" required />
+            <input type="password" placeholder="Password" required />
+            <button type="submit" class="create-btn">Sign in</button>
+        </form>
+
+        <div class="divider">
+            <span>or</span>
+        </div>
+
+        <div class="social-login">
+            <button class="google-btn">Continue with Google</button>
+            <button class="facebook-btn">Continue with Facebook</button>
+        </div>
+
+         <div class="signup-link">
+            Don't have an account? <a href="signup.html">Sign Up</a>
+        </div>
     </div>
+
+
+
+<!-- 
+    <div class="signin-container">
+        <div class="logo">GREENIK</div>
+        <h2>Sign In</h2>
+        <form>
+            <input type="email" placeholder="Email Address" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit">Sign In</button>
+        </form>
+
+        <div class="social-login">
+            <a href="#"><i class="fab fa-google"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+
+        <div class="signup-link">
+            Don't have an account? <a href="#">Sign Up</a>
+        </div>
+    </div> -->
 </body>
 
 </html>

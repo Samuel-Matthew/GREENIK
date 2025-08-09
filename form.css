@@ -4,84 +4,137 @@
     box-sizing: border-box;
 }
 
-input[type='email'], input[type='password'],input[type='text']  {
-    border: none;
-    border-bottom: 2px solid grey;
-    outline: none;
-    background: transparent;
-    height: 30px;
-    width: 100%;
-    /* padding: 10px; */
-}
 
-input[type='submit'] {
-    background: transparent;
-    border: 1px solid black;
-    padding: 10px;
-    border-radius: 10px;
-}
 
-input{
-    position: absolute;
-    bottom: 0;
-    font-size: 28px;
-}
+
+/* sign up */
+
 
 body {
-    background: url(images/representation-ecology-sustainability.jpg) no-repeat center;
-    background-size: cover;
-    background-color: rgba(0, 0, 0, 0.492);
-    background-blend-mode: multiply;
-    position: relative;
-     height: 100vh;
-   
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #2e7d32, #fdd835);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-.form-container{
+.signup-container {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    width: 350px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.form-header {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.form-header h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2rem;
+    color: #2e7d32;
+}
+
+.g-letter {
+    font-size: 2.5rem;
+    font-weight: bold;
+    background: linear-gradient(45deg, #2e7d32, #fdd835);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.form-header p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+form input {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.create-btn {
+    background: #2e7d32;
+    color: white;
+    padding: 0.8rem;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.create-btn:hover {
+    background: #256227;
+}
+
+.divider {
+    text-align: center;
+    margin: 1rem 0;
+    color: #888;
+    position: relative;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width: 40%;
+    height: 1px;
+    background: #ccc;
 }
 
-form {
-    width: 500px;
-    height: 600px;
-    backdrop-filter: blur(100px);
-    /* margin: auto; */
-    /* margin-top: 50px; */
-    /* padding-top: 50px; */
-    z-index: -3;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.divider::before {
+    left: 0;
 }
 
-.box {
-    position: relative;
-    height: 50px;
-    width: 80%;
-    z-index: 2;
-    margin: 15px;
-    /* background-color: whitesmoke; */
-
+.divider::after {
+    right: 0;
 }
 
-label {
-    position: absolute;
-    bottom: 2px;
-    z-index: -2;
-    font-size: 26px;
-    padding: 5px;
+.social-login button {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0.4rem 0;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
-input:focus~label {
-    top: -10px;
-    color: rgb(25, 104, 157);
+.google-btn {
+    background: #b0a4a4d4;
+    color: #f4f4f4;
+    border: 1px solid #ccc;
 }
 
-input:focus {
-    border-bottom-color: rgb(48, 134, 192);
+.google-btn:hover {
+    background: #f4f4f4;
+}
+
+.facebook-btn {
+    background: #1877f2;
+    color: white;
+}
+
+.facebook-btn:hover {
+    background: #0f5bb5;
+}
+
+.signup-link{
+    font-size: 12px;
+}
+
+.signup-link a {
+    color: #2e8b57;
+    text-decoration: none;
 }
